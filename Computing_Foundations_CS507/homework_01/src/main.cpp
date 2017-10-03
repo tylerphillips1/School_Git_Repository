@@ -1,35 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include "exponential.h"
+
 using namespace std;
-
-void limit_method(const double x, const double n);
-void sum_method(const double x, const double n);
-
 
 int main(void) {
 	
-	double x = 1.0;
-	double n = 1e308;
-
-	limit_method(x, n);
-
-		return 0;
-}	
-
-void limit_method(const double x, const double n){
+	// Numeber to find the exponential of
+	double numExp = 1.0;
 	
-	double d = x/n;
+	limit_method(numExp);
+	sum_method(numExp);
 
-	cout << "d = " << d << endl;
-
-	double e = pow(1.0 + d, n);
-
-	cout << "e = " << e << endl;
-}
-
-
-void sum_method(const double x, const double n){
-
-
-
-}
+	return 0;
+}	
