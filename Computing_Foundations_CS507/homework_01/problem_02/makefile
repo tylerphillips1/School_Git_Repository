@@ -1,9 +1,9 @@
 CXX = g++
-OBJS = main.o exponential.o
+OBJS = main.o
 CXXFLAGS = -I ./include
-Prog = Phillips_HW_01_Prob_1 
+Prog = Phillips_HW_01_Prob_2 
 
-vpath %.cpp src
+VPATH = src
 
 all : $(OBJS)
 	$(CXX) $(OBJS) -o $(Prog)

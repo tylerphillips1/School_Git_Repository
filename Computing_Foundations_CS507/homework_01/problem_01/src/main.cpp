@@ -6,8 +6,9 @@ using namespace std;
 
 int main(void) {
 	
-	// Numeber to find the exponential of
 	double numExp = 1.0;
+
+	cout << "\nNOTE: exp(" << numExp << ") = " << exp(numExp) << " using cmath library \n" << endl;
 	
 	limit_method(numExp);
 	sum_method(numExp);

@@ -26,7 +26,7 @@ void sum_method(const double numExp){
 
 	print_Problem_Header(1.2);
 	
-	double sum = 1 + numExp;
+	double sum = 1 + numExp; // This is the first term so start with n=2
 	double newTerm = 1;
 	double tol = 1e-8;
 	int n = 2;
@@ -39,6 +39,7 @@ void sum_method(const double numExp){
 	
 	cout << "exp(" << numExp << ") = " << sum << endl;
 	cout << "calculated using " << n << " terms" << endl; 
+	end_Problem();
 }
 
 double factorial(const int k) {
@@ -65,5 +66,5 @@ void print_Problem_Header(double probNum){
 }
 
 void end_Problem(){
-	cout << "\n" << endl;
+	cout << endl;
 }
