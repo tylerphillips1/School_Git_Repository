@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 #include "exponential.h"
 
 using namespace std;
@@ -31,14 +32,15 @@ void sum_method(const double numExp){
 	double tol = 1e-8;
 	int n = 2;
 
+	cout << "i:     e(" << numExp << "):" << endl;
+	cout << "1      " << setw(12) << setprecision(9) << fixed << left << sum << endl;
 	while(newTerm > tol) {
 		newTerm = power(numExp, n) / factorial(n);
 		sum += newTerm;
+		cout << setw(7) << left << n << setw(12) << fixed << setprecision(9) << left << sum << endl;
 		n++;
 	}
-	
-	cout << "exp(" << numExp << ") = " << sum << endl;
-	cout << "calculated using " << n << " terms" << endl; 
+	cout << "exp(" << (int) numExp << ") " << setprecision(9) << exp(numExp) << " using cmath library" << endl;	
 	end_Problem();
 }
 
