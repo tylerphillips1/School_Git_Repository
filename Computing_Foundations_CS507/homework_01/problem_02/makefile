@@ -1,5 +1,5 @@
 CXX = g++
-OBJS = main.o
+OBJS = main.o complexNum.o
 CXXFLAGS = -I ./include
 Prog = Phillips_HW_01_Prob_2 
 

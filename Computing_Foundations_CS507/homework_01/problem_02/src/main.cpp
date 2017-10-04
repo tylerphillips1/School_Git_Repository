@@ -5,8 +5,8 @@ using namespace std;
 
 int main(void) {
 	
-	complexNum<double> a(2, 4);
-	complexNum<double> b(5);
+	complexNum<double> a(2.0, 4.0);
+	complexNum<double> b(5.0);
 
 	complexNum<double> c;
 

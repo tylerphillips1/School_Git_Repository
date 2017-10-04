@@ -1,15 +1,18 @@
+#ifndef complexNum
+#define complexNum
+
 template<class T>
-class complexNum {
+class complexNum<T> {
 	private:
 		T realNum;
 		T imagNum;
 
 	public:
 		// Constructors and destructor
-		complexNum() : realNum(0), imagNum(0) {};
-		complexNum(T num)          : realNum(num), imagNum(0) {};
-		complexNum(T num1, T num2) : realNum(num1), imagNum(num2) {};
-		~complexNum(){};
+		complexNum();
+		complexNum(T num);
+		complexNum(T num1, T num2);
+		~complexNum();
 		
 		// Opertor overloading
 		complexNum operator + (complexNum complex2) {
@@ -20,8 +23,8 @@ class complexNum {
 		}
 
 		// 
-		double get_real();	
-		double get_imag();
+		T get_real();	
+		T get_imag();
 };
 
-
+#endif
