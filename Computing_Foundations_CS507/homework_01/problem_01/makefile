@@ -11,6 +11,10 @@ all : $(OBJS)
 %.o : %.cpp
 	$(CXX) -c $< $(CXXFLAGS)
 
+run : all 
+	./$(Prog)
+	make clean
+
 .Phony : clean
 
 clean:
