@@ -2,6 +2,7 @@
 #define complex_Num
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ class complexNum {
 
 	public:
 		// Constructors and destructor
-		complexNum()				: realNum(0),    imagNum(0)    {};
+		complexNum()			   : realNum(0),    imagNum(0)    {};
 		complexNum(T num)          : realNum(num),  imagNum(0)    {};
 		complexNum(T num1, T num2) : realNum(num1), imagNum(num2) {};
 		~complexNum() {};
@@ -61,6 +62,9 @@ class complexNum {
 		}
 		T get_imag() {
 			return imagNum;
+		}
+		double absVal() {
+			return sqrt(realNum * realNum + imagNum * imagNum); 
 		}
 
 };

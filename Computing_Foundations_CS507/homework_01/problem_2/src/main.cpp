@@ -2,20 +2,15 @@
 #include <cmath>
 #include "complexNum.h"
 
+// Function to print number nice
 void printNum(complexNum<double> a) {
 	cout << "(" << a.get_real() << ", " << a.get_imag() << "i)";
 }
-
-double abs(complexNum<double> a) {
-	return sqrt(a.get_real() * a.get_real() + a.get_imag() * a.get_imag());
-}
-
 
 int main(void) {
 
 	complexNum<double> a(2.0, 4.0);
 	complexNum<double> b(5.0);
-
 	complexNum<double> c, d, e, f, g;
 
 	c = a + b;
@@ -24,7 +19,7 @@ int main(void) {
 	f = a / b;
 	g = a;
 
-	double val = abs(c); 
+	double val = c.absVal(); 
 
 	cout << "\n*********************************" << endl;
 	cout << "            Problem 2            " << endl;
