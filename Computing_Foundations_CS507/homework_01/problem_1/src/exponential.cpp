@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 // Problem 1.1; exponential using limit method
 void limit_method(const double numExp){
 
@@ -17,8 +18,9 @@ void limit_method(const double numExp){
 
 	double e = pow(1.0+d, n);
 
-	cout << "exp(" << numExp << ") = " << e << "\n\n";	
+	cout << "exp(" << numExp << ") = " << e << endl;	
 }
+
 
 // Problem 1.2; exponential using summation method
 void sum_method(const double numExp){
@@ -41,9 +43,9 @@ void sum_method(const double numExp){
 		cout << setw(7) << left << n << setw(12) << fixed << setprecision(9) << left << sum << endl;
 		n++;
 	}
-	cout << "exp(" << (int) numExp << ") " << setprecision(9) << exp(numExp) << " using cmath library" << endl;	
-	cout << endl;
+	cout << "exp(" << (int) numExp << ") " << setprecision(9) << exp(numExp) << " using cmath library\n" << endl;	
 }
+
 
 // Factorial of a number
 double factorial(const int k) {
@@ -54,6 +56,7 @@ double factorial(const int k) {
 	return prod;
 }
 
+
 // Power of a number, could use <cmath> library
 double power(const double base, const int exponent){
 	double result = 1;
@@ -63,9 +66,10 @@ double power(const double base, const int exponent){
 	return result;
 }
 
+
 // Problem header for output to console
 void print_Problem_Header(double probNum){
-	cout << "*****************************" << endl;
+	cout << "\n*****************************" << endl;
 	cout << "        Problem " << probNum << endl;
 	cout << "*****************************" << endl;
 	
